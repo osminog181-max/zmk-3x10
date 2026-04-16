@@ -1,15 +1,5 @@
-if SHIELD_3X10
-
-config ZMK_KEYBOARD_NAME
-    default "3x10"
-
-config ZMK_SPLIT
-	default y
-
-config ZMK_BLE
-	default y
-
-endif
+# Copyright (c) 2020 The ZMK Contributors
+# SPDX-License-Identifier: MIT
 
 if SHIELD_DONGLE
 
@@ -22,4 +12,14 @@ config ZMK_SPLIT_BLE_ROLE_CENTRAL
 config ZMK_USB
 	default y
 
+endif
+
+if SHIELD_3X10
+
+config ZMK_SPLIT
+	default y
+
+config ZMK_BLE
+	default y
+	
 endif
