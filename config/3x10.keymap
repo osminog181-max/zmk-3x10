@@ -142,7 +142,6 @@ behaviors {
             key-positions = <16 17>;
         };
     };
-
     keymap {
         compatible = "zmk,keymap";
 
