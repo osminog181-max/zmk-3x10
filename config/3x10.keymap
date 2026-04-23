@@ -5,7 +5,8 @@
 #define NUMPAD 1
 #define BLT 2
 
-hrm: home_row_mods {
+behaviors {
+    hrm: home_row_mods {
         compatible = "zmk,behavior-hold-tap";
         label = "HRM";
         #binding-cells = <2>;
@@ -15,6 +16,8 @@ hrm: home_row_mods {
         flavor = "balanced";
 
         require-prior-idle-ms = <120>;
+    };
+};
 
 / {
     combos {
