@@ -5,6 +5,7 @@
 #define NUMPAD 1
 #define BLT 2
 
+/ {
 behaviors {
     hrm_r: hrm_right {
         compatible = "zmk,behavior-hold-tap";
