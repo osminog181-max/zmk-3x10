@@ -5,7 +5,7 @@
 #define DEFAULT 0
 #define NUMPAD 1
 #define BLT 2
-
+/{
     keymap {
         compatible = "zmk,keymap";
 
@@ -20,5 +20,4 @@
             label = "base";
         };
     };
-};
 };
