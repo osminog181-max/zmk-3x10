@@ -42,6 +42,15 @@
             25 26 27 28 29
             >;
         };
+
+        tolay: tolay {
+            compatible = "zmk,behavior-hold-tap";
+            label = "TOLAY";
+            bindings = <&mo>, <&kp>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <200>;
+        };
     };
 
     combos {
@@ -79,9 +88,9 @@
 
         simb_numa {
             bindings = <
-&kp N7  &kp N8  &kp N9  &trans  &trans  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp QUESTION               &kp MINUS                 &kp C_MUTE
-&kp N4  &kp N5  &kp N6  &kp N0  &trans  &trans                &trans                 &trans                     &trans                    &mo 1
-&kp N7  &kp N8  &kp N9  &trans  &trans  &kp N                 &kp M                  &hrm_r LEFT_BRACKET COMMA  &hrm_r RIGHT_BRACKET DOT  &trans
+&kp N7  &kp N8  &kp N9  &trans  &trans  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp QUESTION  &kp MINUS  &kp C_MUTE
+&kp N4  &kp N5  &kp N6  &kp N0  &trans  &trans                &trans                 &trans        &trans     &mo 1
+&kp N7  &kp N8  &kp N9  &trans  &trans  &trans                &trans                 &trans        &trans     &trans
             >;
         };
     };
